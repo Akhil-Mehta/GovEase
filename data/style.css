@@ -172,3 +172,25 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 154, 51, .7
 [data-testid="stRadio"] [data-testid="stMarkdownContainer"] p {
   color: #000000 !important;
 }
+
+/* Search options dropdown: black background, white text */
+.st-key-panel [data-testid="stExpander"],
+.st-key-panel [data-testid="stExpander"] details {
+  background: #000000 !important;
+  border-color: #000000 !important;
+}
+.st-key-panel [data-testid="stExpander"] summary,
+.st-key-panel [data-testid="stExpander"] summary p,
+.st-key-panel [data-testid="stExpander"] summary span,
+.st-key-panel [data-testid="stExpander"] summary svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Thorough / Quick options inside it must be white now */
+.st-key-panel [data-testid="stExpander"] [data-testid="stRadio"] label p,
+.st-key-panel [data-testid="stExpander"] [data-testid="stRadio"] label div,
+.st-key-panel [data-testid="stExpander"] [data-testid="stRadio"] [data-testid="stMarkdownContainer"] p,
+.st-key-panel [data-testid="stExpander"] [data-testid="stWidgetLabel"] p {
+  color: #ffffff !important;
+}
