@@ -166,23 +166,9 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 154, 51, .7
 
 .gv-footer { margin-top: 2.4rem; font-size: .82rem; color: var(--muted); }
 
-/* Grey typing box and dropdowns */
-.stTextInput [data-baseweb="input"],
-.stTextInput [data-baseweb="base-input"],
-.stTextInput input,
-.stSelectbox [data-baseweb="select"] > div {
-  background: #E9EDF4 !important;
-  border-color: #CBD3E1 !important;
-}
-
-/* keep the navy highlight when you click into them */
-.stTextInput [data-baseweb="input"]:focus-within,
-.stSelectbox [data-baseweb="select"] > div:focus-within {
-  border-color: #12306B !important;
-}
-
-/* the list that opens when you click a dropdown */
-[data-baseweb="popover"] ul,
-[data-baseweb="menu"] {
-  background: #F1F4F9 !important;
+/* Search mode options: black text */
+[data-testid="stRadio"] label p,
+[data-testid="stRadio"] label div,
+[data-testid="stRadio"] [data-testid="stMarkdownContainer"] p {
+  color: #000000 !important;
 }
