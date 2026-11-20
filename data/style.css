@@ -155,6 +155,13 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 154, 51, .7
 .gv-how strong { font-family: var(--serif); color: var(--navy); font-size: 1rem; }
 .gv-how strong::before { content: counter(how) ". "; }
 .gv-how span { color: var(--muted); font-size: .92rem; line-height: 1.55; }
+
+/* Stealth / Lite radio option text */
+[data-testid="stRadio"] label p,
+[data-testid="stRadio"] label div,
+[data-testid="stRadio"] [data-testid="stMarkdownContainer"] p {
+  color: var(--ink) !important;
+}
 @media (max-width: 640px) { .gv-how { grid-template-columns: 1fr; gap: 1rem; } }
 
 .gv-footer { margin-top: 2.4rem; font-size: .82rem; color: var(--muted); }
