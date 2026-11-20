@@ -165,3 +165,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 154, 51, .7
 @media (max-width: 640px) { .gv-how { grid-template-columns: 1fr; gap: 1rem; } }
 
 .gv-footer { margin-top: 2.4rem; font-size: .82rem; color: var(--muted); }
+
+/* Language toggle: selected option in blue */
+[data-testid="stSegmentedControl"] [data-testid="stBaseButton-segmented_controlActive"],
+[data-testid="stSegmentedControl"] button[aria-checked="true"],
+[data-testid="stSegmentedControl"] button[aria-pressed="true"] {
+  background: #12306B !important;
+  border-color: #12306B !important;
+  color: #ffffff !important;
+}
+[data-testid="stSegmentedControl"] [data-testid="stBaseButton-segmented_controlActive"] p,
+[data-testid="stSegmentedControl"] button[aria-checked="true"] p,
+[data-testid="stSegmentedControl"] button[aria-pressed="true"] p {
+  color: #ffffff !important;
+}
