@@ -194,3 +194,17 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 154, 51, .7
 .st-key-panel [data-testid="stExpander"] [data-testid="stWidgetLabel"] p {
   color: #ffffff !important;
 }
+
+/* Example chips: dark grey on hover */
+[data-testid="stPills"] button:hover,
+[data-testid="stBaseButton-pills"]:hover {
+  background: #4A4F5A !important;
+  border-color: #4A4F5A !important;
+  color: #ffffff !important;
+}
+[data-testid="stPills"] button:hover p,
+[data-testid="stPills"] button:hover span,
+[data-testid="stBaseButton-pills"]:hover p,
+[data-testid="stBaseButton-pills"]:hover span {
+  color: #ffffff !important;
+}
