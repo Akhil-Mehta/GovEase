@@ -198,13 +198,27 @@ button:focus-visible, a:focus-visible { outline: 3px solid rgba(245, 154, 51, .7
 /* Example chips: dark grey on hover */
 [data-testid="stPills"] button:hover,
 [data-testid="stBaseButton-pills"]:hover {
-  background: #333333 !important;
-  border-color: #333333 !important;
+  background: #4A4F5A !important;
+  border-color: #4A4F5A !important;
   color: #ffffff !important;
 }
 [data-testid="stPills"] button:hover p,
 [data-testid="stPills"] button:hover span,
 [data-testid="stBaseButton-pills"]:hover p,
 [data-testid="stBaseButton-pills"]:hover span {
+  color: #ffffff !important;
+}
+
+/* Language toggle: dark grey on hover */
+[data-testid="stSegmentedControl"] button:hover,
+[data-testid="stSegmentedControl"] [data-testid="stButtonGroup"] button:hover,
+.stApp [data-testid="stButtonGroup"] button:hover {
+  background: #4A4F5A !important;
+  background-color: #4A4F5A !important;
+  border-color: #4A4F5A !important;
+  color: #ffffff !important;
+}
+[data-testid="stSegmentedControl"] button:hover *,
+.stApp [data-testid="stButtonGroup"] button:hover * {
   color: #ffffff !important;
 }
