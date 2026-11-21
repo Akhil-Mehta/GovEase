@@ -22,22 +22,18 @@ from utils import util_UI as ui  # noqa: E402
 RESULT_LANG = {"English": "English", "हिंदी": "Hindi"}
 TEXT = uEH.EngToHin()
 
-
 @st.cache_data(show_spinner=False)
 def load_geo(language):
     return uSD.geo_data(language)
 
-
 def clear_result():
     st.session_state.pop("result", None)
-
 
 def pick_example():
     pick = st.session_state.get("example_pick")
     if pick:
         st.session_state["need"] = pick
         st.session_state["example_pick"] = None
-
 
 def run_search(need, state, dist, language, mode, t):
     """Find the website, read it, translate if needed. Returns a result dict or None."""
